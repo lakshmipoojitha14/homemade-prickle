@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Pickle Paradise</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">Pickle Paradise</div>
+    <nav class="nav-bar">
+      <a href="{{ url_for('veg_pickles') }}">Veg Pickles</a>
+      <a href="{{ url_for('non_vegpickles') }}">Non-Veg Pickles</a>
+      <a href="{{ url_for('snacks') }}">Snacks</a>
+      <a href="{{ url_for('cart') }}">🛒 Cart</a>
+      <a href="{{ url_for('logout') }}">Logout</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Welcome, {{ session.username }}!</h1>
+      <p>Craving authentic, homemade pickles and crunchy snacks? You’re in the right place!</p>
+
+      <div class="product-categories">
+        <div class="category-card">
+          <h2>🌱 Veg Pickles</h2>
+          <p>Classic mango, zesty lemon, and more...</p>
+          <a href="https://tse3.mm.bing.net/th/id/OIP.zHt7VSXK4KvKJCeNteY3BAHaDt?pid=Api&P=0&h=180" class="btn">Shop Veg</a>
+        </div>
+
+        <div class="category-card">
+          <h2>🍗 Non-Veg Pickles</h2>
+          <p>Spicy chicken, mutton, fish pickles & more.</p>
+          <a href="https://tse4.mm.bing.net/th/id/OIP.LAQCn8wbjdpDycLFj-7qgAHaHa?pid=Api&P=0&h=180" class="btn">Shop Non-Veg</a>
+        </div>
+
+        <div class="category-card">
+          <h2>🍘 Snacks</h2>
+          <p>Crispy treats to go with your pickles.</p>
+          <a href="https://tse1.mm.bing.net/th/id/OIP.PoYPUqfALMfzi5UuL5oobQHaE6?pid=Api&P=0&h=180" class="btn">Shop Snacks</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Poojitha prickles| Taste the tradition of Indian pickles. Made with love, delivered with care.
+  </footer>
+  </footer>
+
+</body>
+</html>
